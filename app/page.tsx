@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ConnectButton } from "accesly";
 
 export default function Home() {
@@ -10,6 +11,12 @@ export default function Home() {
           Connect your Wallet
         </h1>
         <ConnectButton />
+        <Link
+          href="/xdr-test"
+          className="px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-lg font-medium hover:opacity-80 transition-opacity"
+        >
+          Test XDR Signing
+        </Link>
       </main>
     </div>
   );
